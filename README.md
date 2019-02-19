@@ -32,7 +32,7 @@
 
 作为工厂方法模式的延伸，抽象工厂模式简化类工厂方法模式的某些情况，即是某几个产品总是同时发生改变，且这几个产品相对固定，即**产品存在产品族划分**时。抽象工厂模式将同一等级的产品放到同一个工厂创建，按不同的产品族划分不同的工厂
 抽象工厂**需要固定的产品族**，如果产品族经常发生改变，则会违反开闭原则，不适用于该模式  
-示例代码[]()
+示例代码 [abstractt/game](https://github.com/HuangZhiAn/Design-Patterns-Quick-Learning-Notes-Java/tree/master/src/main/factory/abstractt/game)
 
 ### 单例模式
 单例模式比较简单，学习成本低，使用频率却比较高，是性价比很高的设计模式。
@@ -110,7 +110,8 @@ class Singleton {
 
 原型模式在原型类本身中实现 Cloneable 接口，并重写 clone() 方法，通过 clone() 将本身复制并返回
 不存在引用类型的成员变量时，使用 Object 的 clone() 方法即可(浅拷贝)
-当原型类中存在引用类型成员变量时，需要实现 Serializable 接口，将本身序列化和反序列化(深拷贝)
+当原型类中存在引用类型成员变量时，需要实现 Serializable 接口，将本身序列化和反序列化(深拷贝)  
+示例代码 []()
 ### 建造者模式
 
 > 将一个复杂对象的构建与它的表示分离，使得同样的构建过程可以创建不同的表示。建造者模式是一种对象创建型模式。
@@ -121,6 +122,6 @@ class Singleton {
 指挥者负责建造的过程（顺序、是否调用），可以并入建造者类中
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NDg3NTg4NjAsLTEzNTk2NDU1MiwyMD
-cyNTUwMzUyLDE0OTY0NzU0MV19
+eyJoaXN0b3J5IjpbLTg4Nzg2ODY1MywtMTM1OTY0NTUyLDIwNz
+I1NTAzNTIsMTQ5NjQ3NTQxXX0=
 -->
