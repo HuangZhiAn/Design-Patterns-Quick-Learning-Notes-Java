@@ -1,7 +1,8 @@
+
 # Design-Patterns-Quick-Learning-Notes-Java
 设计模式快速学习笔记  
 之前看《Java设计模式》这本书，写了一些设计模式学习笔记，现在重新排版整理，增加书中的练习题代码，作为设计模式的**快速学习**或**快速复习**资料  
-[设计原则学习复习笔记](https://github.com/HuangZhiAn/Design-Patterns-Quick-Learning-Notes-Java/blob/master/Object-Oriented-Design-Principles.md)
+[设计原则学习复习笔记](https://github.com/HuangZhiAn/Design-Patterns-Quick-Learning-Notes-Java/blob/master/Object-Oriented-Design-Principles.md)  
 特别感谢书本作者[刘伟](http://blog.csdn.net/lovelion),编辑 [quanke](http://quanke.name)
 
 ## 创建型模式
@@ -42,7 +43,7 @@
 
 单例模式分为饿汉式和懒汉式，饿汉式在类加载时创建实例，可以保证实例唯一，但比较浪费系统资源，因为不管该类有没有使用，启动时都会实例化单例类，因此推荐使用懒汉式
 懒汉式在无 synchronized 同步约束的单例模式存在并发情况下创建多个实例的问题
-有 synchronized 单例类一般使用**双重检查锁定**保证实例唯一
+有 synchronized 单例类一般使用**双重检查锁定**保证实例唯一，需要在静态成员变量 instance 之前增加修饰符 volatile ( Why? )
 ```java
 class LazySingleton {   
     private volatile static LazySingleton instance = null;   
@@ -89,31 +90,36 @@ class Singleton {
 利用 JVM 的特性，在加载 Singleton 单例类时不会马上实例化静态内部类的静态变量，同时在并发调用 getInstance() 方法时，JVM 保证了只实例化一次（如何保证？）
 ### 原型模式
 
-> 使用原型实例指定创建对象的种类，并且通过拷贝这些原型创建新的对象。原型模式是一种对象创建型模式。
+> 使用原型实例指定创建对象的种类，并且**通过拷贝这些原型创建新的对象**。原型模式是一种对象创建型模式。
 > 一般而言，Java语言中的clone()方法满足：
 > 
-> (1) 对任何对象x，都有x.clone() != x，即克隆对象与原型对象不是同一个对象；
-> 
-> (2) 对任何对象x，都有x.clone().getClass() == x.getClass()，即克隆对象与原型对象的类型一样；
-> 
-> (3) 如果对象x的equals()方法定义恰当，那么x.clone().equals(x)应该成立。
+> > (1) 对任何对象x，都有x.clone() != x，即克隆对象与原型对象不是同一个对象；
+>> 
+> > (2) 对任何对象x，都有x.clone().getClass() == x.getClass()，即克隆对象与原型对象的类型一样；
+> > 
+> > (3) 如果对象x的equals()方法定义恰当，那么x.clone().equals(x)应该成立。
 > 
 > 为了获取对象的一份拷贝，我们可以直接利用Object类的clone()方法，具体步骤如下：
 > 
-> (1) 在派生类中覆盖基类的clone()方法，并声明为public；
-> 
-> (2) 在派生类的clone()方法中，调用super.clone()；
-> 
-> (3) 派生类需实现Cloneable接口。
+> > (1) 在派生类中覆盖基类的clone()方法，并声明为public；
+> > 
+> > (2) 在派生类的clone()方法中，调用super.clone()；
+> > 
+> > (3) 派生类需实现Cloneable接口。
 
 原型模式在原型类本身中实现 Cloneable 接口，并重写 clone() 方法，通过 clone() 将本身复制并返回
-不存在引用类型的成员变量时，使用 Object 的 clone() 方法即可（浅拷贝）。
-当原型类中存在引用类型成员变量时，需要实现 Serializable 接口，将本身序列化和反序列化
+不存在引用类型的成员变量时，使用 Object 的 clone() 方法即可(浅拷贝)
+当原型类中存在引用类型成员变量时，需要实现 Serializable 接口，将本身序列化和反序列化(深拷贝)
 ### 建造者模式
 
 > 将一个复杂对象的构建与它的表示分离，使得同样的构建过程可以创建不同的表示。建造者模式是一种对象创建型模式。
 
-建造者模式用于创建复杂对象，该模式使用频率不高。
+建造者模式用于创建**复杂对象**，该模式使用频率不高
 抽象化建造者类 (Builder)，方便扩展
 建造者实现类 (ConcreteBuilder) 负责产品类不同部件的建造实现，不同的建造者建造出不同的产品（废话！）
-指挥者负责建造的过程（顺序、是否调用），可与并入建造者类中
+指挥者负责建造的过程（顺序、是否调用），可以并入建造者类中
+
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTEzNTk2NDU1MiwyMDcyNTUwMzUyLDE0OT
+Y0NzU0MV19
+-->
