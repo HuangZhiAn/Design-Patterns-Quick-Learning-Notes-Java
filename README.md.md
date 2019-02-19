@@ -102,10 +102,10 @@ class Singleton {
 > 为了获取对象的一份拷贝，我们可以直接利用Object类的clone()方法，具体步骤如下：
 > 
 > > (1) 在派生类中覆盖基类的clone()方法，并声明为public；
-> 
-> (2) 在派生类的clone()方法中，调用super.clone()；
-> 
-> (3) 派生类需实现Cloneable接口。
+> > 
+> > (2) 在派生类的clone()方法中，调用super.clone()；
+> > 
+> > (3) 派生类需实现Cloneable接口。
 
 原型模式在原型类本身中实现 Cloneable 接口，并重写 clone() 方法，通过 clone() 将本身复制并返回
 不存在引用类型的成员变量时，使用 Object 的 clone() 方法即可(浅拷贝)
@@ -120,5 +120,5 @@ class Singleton {
 指挥者负责建造的过程（顺序、是否调用），可以并入建造者类中
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzYwNTc1NjYxLC02NzMzMjI1NzBdfQ==
+eyJoaXN0b3J5IjpbMTQ5NjQ3NTQxLC02NzMzMjI1NzBdfQ==
 -->
