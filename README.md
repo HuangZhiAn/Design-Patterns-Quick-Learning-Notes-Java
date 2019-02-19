@@ -122,7 +122,13 @@ class Singleton {
 指挥者负责建造的过程（顺序、是否调用），可以并入建造者类中  
 示例代码 [builder](https://github.com/HuangZhiAn/Design-Patterns-Quick-Learning-Notes-Java/tree/master/src/main/builder)
 
+## 结构型模式
+### 适配器模式
+
+> 将一个接口转换成客户希望的另一个接口，使接口不兼容的那些类可以一起工作，其别名为包装器(Wrapper)。适配器模式既可以作为类结构型模式，也可以作为对象结构型模式
+
+适配器模式可以用来适配两种能达到相同效果的接口，将其中一个接口的使用方式改成另一种接口，使系统中的接口统一，可用来适配第三方库
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2OTE1MzA1LC0xMzU5NjQ1NTIsMjA3Mj
-U1MDM1MiwxNDk2NDc1NDFdfQ==
+eyJoaXN0b3J5IjpbLTE2NTU5MzQ5MDQsLTE2OTE1MzA1LC0xMz
+U5NjQ1NTIsMjA3MjU1MDM1MiwxNDk2NDc1NDFdfQ==
 -->
