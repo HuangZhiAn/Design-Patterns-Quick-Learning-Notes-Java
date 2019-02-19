@@ -99,7 +99,7 @@ class Singleton {
 > 
 > (2) 在派生类的clone()方法中，调用super.clone()；
 > 
-> (3)派生类需实现Cloneable接口。
+> (3) 派生类需实现Cloneable接口。
 
 原型模式在原型类本身中实现 Cloneable 接口，并重写 clone() 方法，通过 clone() 将本身复制并返回
 不存在引用类型的成员变量时，使用 Object 的 clone() 方法即可（浅拷贝）。
