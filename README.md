@@ -127,8 +127,10 @@ class Singleton {
 
 > 将一个接口转换成客户希望的另一个接口，使接口不兼容的那些类可以一起工作，其别名为包装器(Wrapper)。适配器模式既可以作为类结构型模式，也可以作为对象结构型模式
 
-适配器模式可以用来适配两种能达到相同效果的接口，将其中一个接口的使用方式改成另一种接口，使系统中的接口统一，可用来适配第三方库
+适配器模式可以用来适配两种能达到相同效果的接口，将其中一个接口的使用方式改成另一种接口，使系统中的接口统一，可用来适配第三方库  
+适配器模式可以用对象关联的方式实现，也可以使用继承的方式实现。继承的实现方式较多的局限（哪些局限？），推荐用对象关联的方式。双向适配器使得两种接口方式都可以相互使用，需要适配器类实现两种接口，同时将两种接口作为shi pei zhe
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NTU5MzQ5MDQsLTE2OTE1MzA1LC0xMz
-U5NjQ1NTIsMjA3MjU1MDM1MiwxNDk2NDc1NDFdfQ==
+eyJoaXN0b3J5IjpbMTk0NzIzMzA1OCwtMTY5MTUzMDUsLTEzNT
+k2NDU1MiwyMDcyNTUwMzUyLDE0OTY0NzU0MV19
 -->
