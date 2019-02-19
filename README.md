@@ -1,4 +1,4 @@
-# Design-Pattern-with-Java
+# Design-Pattern-with-Java-Learn
 设计模式学习笔记，之前看《Java设计模式》这本书，写了一些设计模式学习笔记，现在重新排版整理
 感谢作者[刘伟](http://blog.csdn.net/lovelion),编辑 [quanke](http://quanke.name)
 
@@ -10,7 +10,8 @@
 
 为了满足职责原则，**将对象的创建和使用分离**，使用工厂类创建对象，可根据传入的参数不同，创建不同的对象。满足依赖倒转原则，客户端并不需要关心具体的实现类
 **违反了开闭原则**，增加新的实现类需要修改工厂类中的代码
-适用于实现类较少且不怎么会增加的情况
+适用于实现类较少且不怎么会增加的情况 
+示例代码 [graph](https://github.com/HuangZhiAn/Design-Pattern-with-Java-Learn/tree/master/src/main/factory/simple/graph)
 
 ### 工厂方法模式
 
@@ -19,7 +20,8 @@
 > (Polymorphic Factory Pattern)。工厂方法模式是一种类创建型模式。
 
 工厂方法模式在原来简单工厂模式的基础上，为了**解决增加实现类需要修改工厂类的问题**，将工厂类抽象化，新增实现类时只需新增工厂实现类即可，不需要修改原来的代码，**获得更好的扩展性，满足开闭原则**
-每个产品实现类都需要对应的工厂类，这将**增加编码复杂度**
+每个产品实现类都需要对应的工厂类，这将**增加编码复杂度** 
+示例代码 [image/reader](https://github.com/HuangZhiAn/Design-Pattern-with-Java-Learn/tree/master/src/main/factory/image/reader)
 
 ### 抽象工厂模式
 
