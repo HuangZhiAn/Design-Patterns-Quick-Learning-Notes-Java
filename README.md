@@ -43,7 +43,7 @@
 
 单例模式分为饿汉式和懒汉式，饿汉式在类加载时创建实例，可以保证实例唯一，但比较浪费系统资源，因为不管该类有没有使用，启动时都会实例化单例类，因此推荐使用懒汉式
 懒汉式在无 synchronized 同步约束的单例模式存在并发情况下创建多个实例的问题
-有 synchronized 单例类一般使用**双重检查锁定**保证实例唯一，需要在静态成员变量 instance 之前增加修饰符 volatile (?)
+有 synchronized 单例类一般使用**双重检查锁定**保证实例唯一，需要在静态成员变量 instance 之前增加修饰符 volatile ( Why? )
 ```java
 class LazySingleton {   
     private volatile static LazySingleton instance = null;   
@@ -120,5 +120,6 @@ class Singleton {
 指挥者负责建造的过程（顺序、是否调用），可以并入建造者类中
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA3MjU1MDM1MiwxNDk2NDc1NDFdfQ==
+eyJoaXN0b3J5IjpbLTEzNTk2NDU1MiwyMDcyNTUwMzUyLDE0OT
+Y0NzU0MV19
 -->
