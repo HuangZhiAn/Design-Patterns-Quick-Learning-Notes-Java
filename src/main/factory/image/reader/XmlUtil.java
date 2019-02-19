@@ -1,4 +1,4 @@
-package factory.simple.image.reader;
+package factory.image.reader;
 
 import org.dom4j.Document;
 import org.dom4j.DocumentException;
@@ -11,7 +11,7 @@ public class XmlUtil {
         SAXReader reader = new SAXReader();
         Document document = null;
         try {
-            document = reader.read("src/main/factory/simple/image/reader/config.xml");
+            document = reader.read("src/main/factory/image/reader/config.xml");
         } catch (DocumentException e) {
             e.printStackTrace();
         }
@@ -19,7 +19,7 @@ public class XmlUtil {
         Node node = document.selectSingleNode("//config/imageType");
         ImageFactory imageFactory = null;
         try {
-            imageFactory = (ImageFactory) Class.forName("factory.simple.image.reader."+node.getText()).newInstance();
+            imageFactory = (ImageFactory) Class.forName("factory.image.reader."+node.getText()).newInstance();
         } catch (ClassNotFoundException | IllegalAccessException | InstantiationException e) {
             e.printStackTrace();
         }

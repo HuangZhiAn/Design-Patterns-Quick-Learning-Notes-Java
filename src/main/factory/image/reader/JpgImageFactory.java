@@ -1,4 +1,4 @@
-package factory.simple.image.reader;
+package factory.image.reader;
 
 public class JpgImageFactory implements ImageFactory {
     @Override
