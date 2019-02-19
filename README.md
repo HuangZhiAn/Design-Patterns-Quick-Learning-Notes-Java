@@ -111,7 +111,7 @@ class Singleton {
 原型模式在原型类本身中实现 Cloneable 接口，并重写 clone() 方法，通过 clone() 将本身复制并返回
 不存在引用类型的成员变量时，使用 Object 的 clone() 方法即可(浅拷贝)
 当原型类中存在引用类型成员变量时，需要实现 Serializable 接口，将本身序列化和反序列化(深拷贝)  
-示例代码 []()
+示例代码 [prototype](https://github.com/HuangZhiAn/Design-Patterns-Quick-Learning-Notes-Java/tree/master/src/main/prototype)
 ### 建造者模式
 
 > 将一个复杂对象的构建与它的表示分离，使得同样的构建过程可以创建不同的表示。建造者模式是一种对象创建型模式。
@@ -119,9 +119,10 @@ class Singleton {
 建造者模式用于创建**复杂对象**，该模式使用频率不高
 抽象化建造者类 (Builder)，方便扩展
 建造者实现类 (ConcreteBuilder) 负责产品类不同部件的建造实现，不同的建造者建造出不同的产品（废话！）
-指挥者负责建造的过程（顺序、是否调用），可以并入建造者类中
+指挥者负责建造的过程（顺序、是否调用），可以并入建造者类中  
+示例代码 [builder](https://github.com/HuangZhiAn/Design-Patterns-Quick-Learning-Notes-Java/tree/master/src/main/builder)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg4Nzg2ODY1MywtMTM1OTY0NTUyLDIwNz
-I1NTAzNTIsMTQ5NjQ3NTQxXX0=
+eyJoaXN0b3J5IjpbLTE2OTE1MzA1LC0xMzU5NjQ1NTIsMjA3Mj
+U1MDM1MiwxNDk2NDc1NDFdfQ==
 -->
