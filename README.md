@@ -139,7 +139,7 @@ class Singleton {
 桥接模式利用依赖倒转的抽象化手段，**将两个不同维度在抽象层中关联**，使其不受实现类的约束，可以随意扩展。桥接模式使用对象的关联关系，代替继承，可以在客户端中灵活配置  
 两个以上维度如何桥接？
 #### 应用
-首先确定两个不同维度的接口，然后将
+首先确定两个不同维度的接口，然后将被调用放作为另一接口的成员，并提供注入方式，在调用方实现类中使用。被调用方在客户端中被注入
 
 ### 组合模式
 
@@ -186,7 +186,7 @@ class Singleton {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0Mzc5MTk5ODAsMTczMTQ3NTA4OSwtMT
+eyJoaXN0b3J5IjpbLTE4ODU5MzY2NDcsMTczMTQ3NTA4OSwtMT
 Y5MTUzMDUsLTEzNTk2NDU1MiwyMDcyNTUwMzUyLDE0OTY0NzU0
 MV19
 -->
