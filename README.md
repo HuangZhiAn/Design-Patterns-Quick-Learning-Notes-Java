@@ -166,8 +166,22 @@ class Singleton {
 
 > 给某一个对象提供一个代理或占位符，并由代理对象来控制对原对象的访问
 
-在不能直接访问或难以直接访问的情况下使用，
+在不能直接访问或难以直接访问的情况下使用，代理对象和被代理对象实现同一接口。代理对象维护一个被代理对象的实例（不一定在实例化代理类时实例化被代理类），在实现同一接口时调用被代理对象的方法，同时可能在调用前后做额外的操作.
+
+> 在实际开发过程中，代理类的实现比上述代码要复杂很多，代理模式根据其目的和实现方式不同可分为很多种类，其中常用的几种代理模式简要说明如下：
+> 
+> (1) 远程代理(Remote Proxy)：为一个位于不同的地址空间的对象提供一个本地的代理对象，这个不同的地址空间可以是在同一台主机中，也可是在另一台主机中，远程代理又称为大使(Ambassador)。(WebService ?)
+
+> (2) 虚拟代理(Virtual Proxy)：如果需要创建一个资源消耗较大的对象，先创建一个消耗相对较小的对象来表示，真实对象只在需要时才会被真正创建。
+> 
+> (3) 保护代理(Protect Proxy)：控制对一个对象的访问，可以给不同的用户提供不同级别的使用权限。
+> 
+> (4) 缓冲代理(Cache Proxy)：为某一个目标操作的结果提供临时的存储空间，以便多个客户端可以共享这些结果。
+> 
+> (5) 智能引用代理(Smart Reference Proxy)：当一个对象被引用时，提供一些额外的操作，例如将对象被调用的次数记录下来等。
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMzk3NDAxLC0xNjkxNTMwNSwtMTM1OT
-Y0NTUyLDIwNzI1NTAzNTIsMTQ5NjQ3NTQxXX0=
+eyJoaXN0b3J5IjpbMTA2ODEzNzUxMSwtMTY5MTUzMDUsLTEzNT
+k2NDU1MiwyMDcyNTUwMzUyLDE0OTY0NzU0MV19
 -->
