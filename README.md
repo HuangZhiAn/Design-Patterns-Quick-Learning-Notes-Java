@@ -154,8 +154,11 @@ class Singleton {
 
 > 为子系统中的一组接口提供一个统一的入口。外观模式定义了一个高层接口，这个接口使得这一子系统更加容易使用
 
-外观模式位于客户端和子系统之间，用于解耦客户端和子系统（微服务和API网管？）。
+外观模式位于客户端和子系统之间，用于解耦客户端和子系统（微服务和API网管？）。将外观类抽象化，可在需要修改子系统时，编写新的外观实现类，符合开闭原则。外观模式适用于客户端需要调用多个子系统的情况
+
+# 享元模式
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM3NTE3OTQwMywtMTY5MTUzMDUsLTEzNT
+eyJoaXN0b3J5IjpbLTkzNjQ5ODY3OSwtMTY5MTUzMDUsLTEzNT
 k2NDU1MiwyMDcyNTUwMzUyLDE0OTY0NzU0MV19
 -->
