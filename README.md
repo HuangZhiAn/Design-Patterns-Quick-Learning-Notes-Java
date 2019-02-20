@@ -146,6 +146,8 @@ class Singleton {
 > 组合多个对象形成树形结构以表示具有“整体—部分”关系的层次结构。组合模式对单个对象（即叶子对象）和组合对象（即容器对象）的使用具有一致性，组合模式又可以称为“整体—部分”(Part-Whole)模式，它是一种对象结构型模式
 
 组合模式用于处理树形结构，对容器节点和叶子节点进行抽象，在容器节点处理方法中做递归操作，叶子节点则不递归。组合模式分为透明组合模式和安全组合模式，区别在于是否在抽象类中声明或实现成员管理方法，透明组合模式对于客户端更加透明一致，安全组合模式叶子节点没有多余的成员管理方法，更加安全
+#### 应用
+先写叶子节点和容器节点的抽象类，声明业务抽象方法。若使用透明模式，则添加add、remove、get等操作容器内集合的方法。然后写不同的叶子节点和不同的容器节点的实现类，叶子节点实现业务方法，容器节点实现业务方法并循环集合，调用业务方法
 
 ### 装饰模式
 
@@ -186,7 +188,7 @@ class Singleton {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4ODU5MzY2NDcsMTczMTQ3NTA4OSwtMT
-Y5MTUzMDUsLTEzNTk2NDU1MiwyMDcyNTUwMzUyLDE0OTY0NzU0
-MV19
+eyJoaXN0b3J5IjpbODMwMDQzMDYyLC0xODg1OTM2NjQ3LDE3Mz
+E0NzUwODksLTE2OTE1MzA1LC0xMzU5NjQ1NTIsMjA3MjU1MDM1
+MiwxNDk2NDc1NDFdfQ==
 -->
