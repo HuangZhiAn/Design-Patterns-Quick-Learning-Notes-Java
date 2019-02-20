@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<config>
+    <database>MongoDbDatabase</database>
+    <format>XmlDataFormat</format>
+</config>
