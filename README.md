@@ -156,9 +156,12 @@ class Singleton {
 
 外观模式位于客户端和子系统之间，用于解耦客户端和子系统（微服务和API网管？）。将外观类抽象化，可在需要修改子系统时，编写新的外观实现类，符合开闭原则。外观模式适用于客户端需要调用多个子系统的情况
 
-# 享元模式
+### 享元模式
 
+> 运用共享技术有效地支持大量细粒度对象的复用。系统只使用少量的对象，而这些对象都很相似，状态变化很小，可以实现对象的多次复用。由于享元模式要求能够共享的对象必须是细粒度对象，因此它又称为轻量级模式，它是一种对象结构型模式
+
+用于复用户相同的对象，节约资源
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkzNjQ5ODY3OSwtMTY5MTUzMDUsLTEzNT
-k2NDU1MiwyMDcyNTUwMzUyLDE0OTY0NzU0MV19
+eyJoaXN0b3J5IjpbLTE3NzIyNzc1MDIsLTE2OTE1MzA1LC0xMz
+U5NjQ1NTIsMjA3MjU1MDM1MiwxNDk2NDc1NDFdfQ==
 -->
