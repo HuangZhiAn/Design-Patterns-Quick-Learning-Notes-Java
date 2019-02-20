@@ -147,8 +147,15 @@ class Singleton {
 
 > 动态地给一个对象增加一些额外的职责，就增加对象功能来说，装饰模式比生成子类实现更为灵活。装饰模式是一种对象结构型模式
 
-装饰模式使用对象间的关联关系代替继承关系，更加灵活透明的扩展原有的功能（和桥接模式的区别？）。
+装饰模式使用对象间的关联关系代替继承关系，更加灵活透明的扩展原有的功能（和桥接模式的区别？抽象装饰类是否有必要？）  
+透明装饰模式和半透明装饰模式，半透明装饰模式在客户端中使用具体的装饰类，因此，不能多次装饰，但可以单独的调用新增的方法
+
+### 外观模式
+
+> 为子系统中的一组接口提供一个统一的入口。外观模式定义了一个高层接口，这个接口使得这一子系统更加容易使用
+
+wai gu
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMjg2NDc1MjcsLTE2OTE1MzA1LC0xMz
-U5NjQ1NTIsMjA3MjU1MDM1MiwxNDk2NDc1NDFdfQ==
+eyJoaXN0b3J5IjpbMTgzMDU2OTM3LC0xNjkxNTMwNSwtMTM1OT
+Y0NTUyLDIwNzI1NTAzNTIsMTQ5NjQ3NTQxXX0=
 -->
