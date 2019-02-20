@@ -154,8 +154,8 @@ class Singleton {
 
 > 为子系统中的一组接口提供一个统一的入口。外观模式定义了一个高层接口，这个接口使得这一子系统更加容易使用
 
-wai gu
+外观模式位于客户端和子系统之间，用于解耦客户端和子系统（微服务和API网管？）。
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgzMDU2OTM3LC0xNjkxNTMwNSwtMTM1OT
-Y0NTUyLDIwNzI1NTAzNTIsMTQ5NjQ3NTQxXX0=
+eyJoaXN0b3J5IjpbLTM3NTE3OTQwMywtMTY5MTUzMDUsLTEzNT
+k2NDU1MiwyMDcyNTUwMzUyLDE0OTY0NzU0MV19
 -->
