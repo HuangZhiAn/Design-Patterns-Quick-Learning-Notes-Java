@@ -2,7 +2,9 @@
 # Design-Patterns-Quick-Learning-Notes-Java
 设计模式快速学习笔记  
 之前看《Java设计模式》这本书，写了一些设计模式学习笔记，现在重新排版整理，增加书中的练习题代码，作为设计模式的**快速学习**或**快速复习**资料  
+
 [设计原则学习复习笔记](https://github.com/HuangZhiAn/Design-Patterns-Quick-Learning-Notes-Java/blob/master/Object-Oriented-Design-Principles.md)  
+
 特别感谢书本作者[刘伟](http://blog.csdn.net/lovelion),编辑 [quanke](http://quanke.name)
 
 ## 创建型模式
@@ -192,7 +194,7 @@ class Singleton {
 #### 应用
 代理模式和装饰模式有部分类似，也是通过对象关联关系实现，而代理模式的代理过程对于客户端透明
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk0MjY5NjQsODMwMDQzMDYyLC0xODg1OT
-M2NjQ3LDE3MzE0NzUwODksLTE2OTE1MzA1LC0xMzU5NjQ1NTIs
-MjA3MjU1MDM1MiwxNDk2NDc1NDFdfQ==
+eyJoaXN0b3J5IjpbLTYzNjkyNzYwOCwtOTQyNjk2NCw4MzAwND
+MwNjIsLTE4ODU5MzY2NDcsMTczMTQ3NTA4OSwtMTY5MTUzMDUs
+LTEzNTk2NDU1MiwyMDcyNTUwMzUyLDE0OTY0NzU0MV19
 -->
