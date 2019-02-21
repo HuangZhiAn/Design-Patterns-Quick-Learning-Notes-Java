@@ -163,6 +163,8 @@ class Singleton {
 > 为子系统中的一组接口提供一个统一的入口。外观模式定义了一个高层接口，这个接口使得这一子系统更加容易使用
 
 外观模式位于客户端和子系统之间，用于解耦客户端和子系统（微服务和API网管？）。将外观类抽象化，可在需要修改子系统时，编写新的外观实现类，符合开闭原则。外观模式适用于客户端需要调用多个子系统的情况
+#### 应用
+确定系统中的各个子系统，编写外观接口，实现外观接口，将子系统的抽象作为成员变量，并提供注入方式，在实现方法中编写子系统调用逻辑，在客户端中直接调用外观类而不关心子系统的实现
 
 ### 享元模式
 
@@ -187,10 +189,10 @@ class Singleton {
 > (4) 缓冲代理(Cache Proxy)：为某一个目标操作的结果提供临时的存储空间，以便多个客户端可以共享这些结果。
 > 
 > (5) 智能引用代理(Smart Reference Proxy)：当一个对象被引用时，提供一些额外的操作，例如将对象被调用的次数记录下来等。
-
-
+#### 应用
+代理模式和装饰模式有部分类似，也是通过对象关联关系实现，而代理模式的代理过程对于客户端透明
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA3OTg5OTE1LDgzMDA0MzA2MiwtMTg4NT
-kzNjY0NywxNzMxNDc1MDg5LC0xNjkxNTMwNSwtMTM1OTY0NTUy
-LDIwNzI1NTAzNTIsMTQ5NjQ3NTQxXX0=
+eyJoaXN0b3J5IjpbLTk0MjY5NjQsODMwMDQzMDYyLC0xODg1OT
+M2NjQ3LDE3MzE0NzUwODksLTE2OTE1MzA1LC0xMzU5NjQ1NTIs
+MjA3MjU1MDM1MiwxNDk2NDc1NDFdfQ==
 -->
