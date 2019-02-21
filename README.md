@@ -207,10 +207,11 @@ class Singleton {
 > 将一个请求封装为一个对象，从而让我们可用不同的请求对客户进行参数化；对请求排队或者记录请求日志，以及支持可撤销的操作。命令模式是一种对象行为型模式，其别名为动作(Action)模式或事务(Transaction)模式。
 
 命令模式使用了抽象命令类将请求者和接收者解耦，用于**接收者种类不同，无法抽象**的情况。因为接收者无法抽象，所以在更换接收者时需要修改代码，导致了违反了开闭原则。抽象命令类的不同实现类对应了不同的接收者，接收者作为成员变量在命令实现类中，使用对象关联关系将接收者**间接抽象成统一的命令类**。这样，在需要更换接收者时，只需要更换相应的命令实现类即可  
-### 命令队列
+#### 命令队列
+命令的批处理，增加命令批处理类，将命令添加到一个集合中，提供 add() 、 remove() 方法和 excute()
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzE3MjQzODU3LC02MzY5Mjc2MDgsLTk0Mj
-Y5NjQsODMwMDQzMDYyLC0xODg1OTM2NjQ3LDE3MzE0NzUwODks
-LTE2OTE1MzA1LC0xMzU5NjQ1NTIsMjA3MjU1MDM1MiwxNDk2ND
-c1NDFdfQ==
+eyJoaXN0b3J5IjpbLTk3Nzk1Njc2MCwtNjM2OTI3NjA4LC05ND
+I2OTY0LDgzMDA0MzA2MiwtMTg4NTkzNjY0NywxNzMxNDc1MDg5
+LC0xNjkxNTMwNSwtMTM1OTY0NTUyLDIwNzI1NTAzNTIsMTQ5Nj
+Q3NTQxXX0=
 -->
