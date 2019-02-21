@@ -193,8 +193,10 @@ class Singleton {
 > (5) 智能引用代理(Smart Reference Proxy)：当一个对象被引用时，提供一些额外的操作，例如将对象被调用的次数记录下来等。
 #### 应用
 代理模式和装饰模式有部分类似，也是通过对象关联关系实现，而代理模式的代理过程对于客户端透明
+## 行为型mo s
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYzNjkyNzYwOCwtOTQyNjk2NCw4MzAwND
-MwNjIsLTE4ODU5MzY2NDcsMTczMTQ3NTA4OSwtMTY5MTUzMDUs
-LTEzNTk2NDU1MiwyMDcyNTUwMzUyLDE0OTY0NzU0MV19
+eyJoaXN0b3J5IjpbLTEyMTA0NzMyNDQsLTYzNjkyNzYwOCwtOT
+QyNjk2NCw4MzAwNDMwNjIsLTE4ODU5MzY2NDcsMTczMTQ3NTA4
+OSwtMTY5MTUzMDUsLTEzNTk2NDU1MiwyMDcyNTUwMzUyLDE0OT
+Y0NzU0MV19
 -->
