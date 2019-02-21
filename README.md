@@ -155,6 +155,8 @@ class Singleton {
 
 装饰模式使用对象间的关联关系代替继承关系，更加灵活透明的扩展原有的功能（和桥接模式的区别？抽象装饰类是否有必要？）  
 透明装饰模式和半透明装饰模式，半透明装饰模式在客户端中使用具体的装饰类，因此，不能多次装饰，但可以单独的调用新增的方法
+#### 应用
+先确定被装饰的接口和实现类，编写装饰类，实现被装饰的接口，将被装饰的接口作为成员放在装饰类中，并提供注入方式。在重写的方法中调用原接口的方法，同时加入装饰逻辑（和代理模式比，装饰模式的装饰过程在客户端实现，而代理类中对于客户端透明）
 
 ### 外观模式
 
@@ -188,7 +190,7 @@ class Singleton {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODMwMDQzMDYyLC0xODg1OTM2NjQ3LDE3Mz
-E0NzUwODksLTE2OTE1MzA1LC0xMzU5NjQ1NTIsMjA3MjU1MDM1
-MiwxNDk2NDc1NDFdfQ==
+eyJoaXN0b3J5IjpbMjA3OTg5OTE1LDgzMDA0MzA2MiwtMTg4NT
+kzNjY0NywxNzMxNDc1MDg5LC0xNjkxNTMwNSwtMTM1OTY0NTUy
+LDIwNzI1NTAzNTIsMTQ5NjQ3NTQxXX0=
 -->
