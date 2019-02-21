@@ -208,9 +208,9 @@ class Singleton {
 
 命令模式使用了抽象命令类将请求者和接收者解耦，用于**接收者种类不同，无法抽象**的情况。因为接收者无法抽象，所以在更换接收者时需要修改代码，导致了违反了开闭原则。抽象命令类的不同实现类对应了不同的接收者，接收者作为成员变量在命令实现类中，使用对象关联关系将接收者**间接抽象成统一的命令类**。这样，在需要更换接收者时，只需要更换相应的命令实现类即可  
 #### 命令队列
-命令的批处理，增加命令批处理类，将命令添加到一个集合中，提供 add() 、 remove() 方法和 excute()
+命令的批处理，增加命令批处理类，将命令添加到一个集合中，提供 add() 、 remove() 和 excute() 方法。客户端将命令添加到队列中，调用 excute() 方法循环或并发执行命令。
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk3Nzk1Njc2MCwtNjM2OTI3NjA4LC05ND
+eyJoaXN0b3J5IjpbMTcxMzQxNTYzNSwtNjM2OTI3NjA4LC05ND
 I2OTY0LDgzMDA0MzA2MiwtMTg4NTkzNjY0NywxNzMxNDc1MDg5
 LC0xNjkxNTMwNSwtMTM1OTY0NTUyLDIwNzI1NTAzNTIsMTQ5Nj
 Q3NTQxXX0=
