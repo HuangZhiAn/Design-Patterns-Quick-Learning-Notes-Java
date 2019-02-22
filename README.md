@@ -216,10 +216,11 @@ class Singleton {
 
 > 提供一种方法来访问聚合对象，而不用暴露这个对象的内部表示，其别名为游标(Cursor)。迭代器模式是一种对象行为型模式。
 
-
+将聚合对象的存储和访问分离，提供统一的聚合对象访问方式
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ4NDIwODU2MiwtMjAxMDExOTIxLDE3MT
-M0MTU2MzUsLTYzNjkyNzYwOCwtOTQyNjk2NCw4MzAwNDMwNjIs
-LTE4ODU5MzY2NDcsMTczMTQ3NTA4OSwtMTY5MTUzMDUsLTEzNT
-k2NDU1MiwyMDcyNTUwMzUyLDE0OTY0NzU0MV19
+eyJoaXN0b3J5IjpbLTQ3OTkyNzUxNywxNDg0MjA4NTYyLC0yMD
+EwMTE5MjEsMTcxMzQxNTYzNSwtNjM2OTI3NjA4LC05NDI2OTY0
+LDgzMDA0MzA2MiwtMTg4NTkzNjY0NywxNzMxNDc1MDg5LC0xNj
+kxNTMwNSwtMTM1OTY0NTUyLDIwNzI1NTAzNTIsMTQ5NjQ3NTQx
+XX0=
 -->
