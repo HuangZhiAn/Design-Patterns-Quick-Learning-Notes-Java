@@ -210,10 +210,13 @@ class Singleton {
 #### 命令队列
 命令的批处理，增加命令批处理类，将命令添加到一个集合中，提供 add() 、 remove() 和 excute() 方法。客户端将命令添加到队列中，调用 excute() 方法循环或并发执行命令。
 
+### 解释器模式
+
+### 迭代器模式
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMTAxMTkyMSwxNzEzNDE1NjM1LC02Mz
-Y5Mjc2MDgsLTk0MjY5NjQsODMwMDQzMDYyLC0xODg1OTM2NjQ3
-LDE3MzE0NzUwODksLTE2OTE1MzA1LC0xMzU5NjQ1NTIsMjA3Mj
-U1MDM1MiwxNDk2NDc1NDFdfQ==
+eyJoaXN0b3J5IjpbLTE0ODY2NzgzMjAsLTIwMTAxMTkyMSwxNz
+EzNDE1NjM1LC02MzY5Mjc2MDgsLTk0MjY5NjQsODMwMDQzMDYy
+LC0xODg1OTM2NjQ3LDE3MzE0NzUwODksLTE2OTE1MzA1LC0xMz
+U5NjQ1NTIsMjA3MjU1MDM1MiwxNDk2NDc1NDFdfQ==
 -->
