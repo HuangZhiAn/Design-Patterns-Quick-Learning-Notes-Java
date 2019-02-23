@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<menu>
+    <item name="新建">CreateCommand</item>
+    <item name="打开">OpenCommand</item>
+    <item name="编辑">EditCommand</item>
+</menu>
