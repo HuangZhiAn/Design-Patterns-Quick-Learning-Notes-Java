@@ -206,7 +206,7 @@ class Singleton {
 
 > 将一个请求封装为一个对象，从而让我们可用不同的请求对客户进行参数化；对请求排队或者记录请求日志，以及支持可撤销的操作。命令模式是一种对象行为型模式，其别名为动作(Action)模式或事务(Transaction)模式。
 
-命令模式使用了抽象命令类将请求者和接收者解耦，用于**接收者种类不同，无法抽象**的情况。因为接收者无法抽象，所以在更换接收者时需要修改代码，导致了违反了开闭原则。抽象命令类的不同实现类对应了不同的接收者，接收者作为成员变量在命令实现类中，使用对象关联关系将接收者**间接抽象成统一的命令类**。这样，在需要更换接收者时，只需要更换相应的命令实现类即可  
+命令模式使用了抽象命令类将请求者和接收者解耦，用于**接收者种类不同，无法抽象**的情况。本该将接收者放请求者类中的，因为接收者无法抽象，所以在更换接收者时需要修改代码，导致了违反了开闭原则。抽象命令类的不同实现类对应了不同的接收者，接收者作为成员变量在命令实现类中，使用对象关联关系将接收者**间接抽象成统一的命令类**。这样，用抽象命令类包装接收者类，将抽象命令类放请求者类中，在需要更换接收者时，只需要更换相应的命令实现类即可  
 #### 命令队列
 命令的批处理，增加命令批处理类，将命令添加到一个集合中，提供 add() 、 remove() 和 excute() 方法。客户端将命令添加到队列中，调用 excute() 方法循环或并发执行命令。 (消息队列？)
 #### 应用
@@ -230,9 +230,9 @@ class Singleton {
 
 将聚合对象的存储和访问分离，提供统一的聚合对象访问方式。JDK Collection iterator() 方法
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY5NjM1MzQ3OCwxNDEzNDU0NzY5LC00Nz
-k5Mjc1MTcsMTQ4NDIwODU2MiwtMjAxMDExOTIxLDE3MTM0MTU2
-MzUsLTYzNjkyNzYwOCwtOTQyNjk2NCw4MzAwNDMwNjIsLTE4OD
-U5MzY2NDcsMTczMTQ3NTA4OSwtMTY5MTUzMDUsLTEzNTk2NDU1
-MiwyMDcyNTUwMzUyLDE0OTY0NzU0MV19
+eyJoaXN0b3J5IjpbNTcwNzQxMDUwLDE0MTM0NTQ3NjksLTQ3OT
+kyNzUxNywxNDg0MjA4NTYyLC0yMDEwMTE5MjEsMTcxMzQxNTYz
+NSwtNjM2OTI3NjA4LC05NDI2OTY0LDgzMDA0MzA2MiwtMTg4NT
+kzNjY0NywxNzMxNDc1MDg5LC0xNjkxNTMwNSwtMTM1OTY0NTUy
+LDIwNzI1NTAzNTIsMTQ5NjQ3NTQxXX0=
 -->
