@@ -46,7 +46,7 @@
 
 单例模式分为饿汉式和懒汉式，饿汉式在类加载时创建实例，可以保证实例唯一，但比较浪费系统资源，因为不管该类有没有使用，启动时都会实例化单例类，因此推荐使用懒汉式
 懒汉式在无 synchronized 同步约束的单例模式存在并发情况下创建多个实例的问题
-有 synchronized 单例类一般使用**双重检查锁定**保证实例唯一，需要在静态成员变量 instance 之前增加修饰符 volatile ( Why? )
+有 synchronized 单例类一般使用**双重检查锁定**保证实例唯一，需要在静态成员变量 instance 之前增加修饰符 volatile ( Why? 在方法执行时，基本数据类型都会拷贝一份副本，而引用类型也会拷贝一份引用，当两个线程都进入方法中拷贝了一份空的引用时，其中一个线程实例化里单例类后，另一线程拷贝的引用依然是空的，导致检查锁定失效)
 ```java
 class LazySingleton {   
     private volatile static LazySingleton instance = null;   
@@ -212,15 +212,25 @@ class Singleton {
 
 ### 解释器模式
 
+> 定义一个语言的文法，并且建立一个解释器来解释该语言中的句子，这里的“语言”是指使用规定格式和语法的代码。解释器模式是一种类行为型模式
+
+用于自定义某种语法，可以更灵活轻便的表达。文法规则？
+
+> ``` 
+> expression ::= value | operation
+> operation ::= expression '+' expression | expression '-' expression 
+> value ::= an integer //一个整数值
+> ```
+
 ### 迭代器模式
 
 > 提供一种方法来访问聚合对象，而不用暴露这个对象的内部表示，其别名为游标(Cursor)。迭代器模式是一种对象行为型模式。
 
-将聚合对象的存储和访问分离，提供统一的聚合对象访问方式
+将聚合对象的存储和访问分离，提供统一的聚合对象访问方式。JDK Collection iterator() 方法
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ3OTkyNzUxNywxNDg0MjA4NTYyLC0yMD
-EwMTE5MjEsMTcxMzQxNTYzNSwtNjM2OTI3NjA4LC05NDI2OTY0
-LDgzMDA0MzA2MiwtMTg4NTkzNjY0NywxNzMxNDc1MDg5LC0xNj
-kxNTMwNSwtMTM1OTY0NTUyLDIwNzI1NTAzNTIsMTQ5NjQ3NTQx
-XX0=
+eyJoaXN0b3J5IjpbMTQxMzQ1NDc2OSwtNDc5OTI3NTE3LDE0OD
+QyMDg1NjIsLTIwMTAxMTkyMSwxNzEzNDE1NjM1LC02MzY5Mjc2
+MDgsLTk0MjY5NjQsODMwMDQzMDYyLC0xODg1OTM2NjQ3LDE3Mz
+E0NzUwODksLTE2OTE1MzA1LC0xMzU5NjQ1NTIsMjA3MjU1MDM1
+MiwxNDk2NDc1NDFdfQ==
 -->
