@@ -208,7 +208,7 @@ class Singleton {
 
 命令模式使用了抽象命令类将请求者和接收者解耦，用于**接收者种类不同，无法抽象**的情况。因为接收者无法抽象，所以在更换接收者时需要修改代码，导致了违反了开闭原则。抽象命令类的不同实现类对应了不同的接收者，接收者作为成员变量在命令实现类中，使用对象关联关系将接收者**间接抽象成统一的命令类**。这样，在需要更换接收者时，只需要更换相应的命令实现类即可  
 #### 命令队列
-命令的批处理，增加命令批处理类，将命令添加到一个集合中，提供 add() 、 remove() 和 excute() 方法。客户端将命令添加到队列中，调用 excute() 方法循环或并发执行命令。
+命令的批处理，增加命令批处理类，将命令添加到一个集合中，提供 add() 、 remove() 和 excute() 方法。客户端将命令添加到队列中，调用 excute() 方法循环或并发执行命令。 (消息队列？)
 
 ### 解释器模式
 
@@ -228,9 +228,9 @@ class Singleton {
 
 将聚合对象的存储和访问分离，提供统一的聚合对象访问方式。JDK Collection iterator() 方法
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQxMzQ1NDc2OSwtNDc5OTI3NTE3LDE0OD
-QyMDg1NjIsLTIwMTAxMTkyMSwxNzEzNDE1NjM1LC02MzY5Mjc2
-MDgsLTk0MjY5NjQsODMwMDQzMDYyLC0xODg1OTM2NjQ3LDE3Mz
-E0NzUwODksLTE2OTE1MzA1LC0xMzU5NjQ1NTIsMjA3MjU1MDM1
-MiwxNDk2NDc1NDFdfQ==
+eyJoaXN0b3J5IjpbLTIxMzI4MzA3NTAsMTQxMzQ1NDc2OSwtND
+c5OTI3NTE3LDE0ODQyMDg1NjIsLTIwMTAxMTkyMSwxNzEzNDE1
+NjM1LC02MzY5Mjc2MDgsLTk0MjY5NjQsODMwMDQzMDYyLC0xOD
+g1OTM2NjQ3LDE3MzE0NzUwODksLTE2OTE1MzA1LC0xMzU5NjQ1
+NTIsMjA3MjU1MDM1MiwxNDk2NDc1NDFdfQ==
 -->
