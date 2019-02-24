@@ -210,13 +210,13 @@ class Singleton {
 #### 命令队列
 命令的批处理，增加命令批处理类，将命令添加到一个集合中，提供 add() 、 remove() 和 excute() 方法。客户端将命令添加到队列中，调用 excute() 方法循环或并发执行命令。 (消息队列？)
 #### 应用
-首先确定请求者和接收者，抽闲命令类（或接口），一般有 execute() 方法，参数根据需要传入。在命令实现类中关联具体的接收者，接收者类型确定时也可以在抽象类中定义，然后在请求者中关联命令类，触发时调用 execute() 方法。编码完成后，确保客户端能在不修改代码的情况下修改请求者
+首先确定请求者和接收者，抽闲命令类（或接口），一般有 execute() 方法，参数根据需要传入。在命令实现类中关联具体的接收者，接收者类型确定时也可以在抽象类中定义，然后在请求者中关联命令类，触发时调用 execute() 方法。编码完成后，确保客户端能在不修改代码的情况下修改请求者的具体命令类，增加新的接收者时，只需添加新的命令实现类
 
 ### 解释器模式
 
 > 定义一个语言的文法，并且建立一个解释器来解释该语言中的句子，这里的“语言”是指使用规定格式和语法的代码。解释器模式是一种类行为型模式
 
-用于自定义某种语法，可以更灵活轻便的表达。文法规则？
+用于自定义某种语法，可以更灵活轻便的表达。如，正则表达式、CRON表达式等。文法规则？
 
 > ``` 
 > expression ::= value | operation
@@ -229,10 +229,12 @@ class Singleton {
 > 提供一种方法来访问聚合对象，而不用暴露这个对象的内部表示，其别名为游标(Cursor)。迭代器模式是一种对象行为型模式。
 
 将聚合对象的存储和访问分离，提供统一的聚合对象访问方式。JDK Collection iterator() 方法
+
+### 中介者模式
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNDMyMjM3MjksNTcwNzQxMDUwLDE0MT
-M0NTQ3NjksLTQ3OTkyNzUxNywxNDg0MjA4NTYyLC0yMDEwMTE5
-MjEsMTcxMzQxNTYzNSwtNjM2OTI3NjA4LC05NDI2OTY0LDgzMD
-A0MzA2MiwtMTg4NTkzNjY0NywxNzMxNDc1MDg5LC0xNjkxNTMw
-NSwtMTM1OTY0NTUyLDIwNzI1NTAzNTIsMTQ5NjQ3NTQxXX0=
+eyJoaXN0b3J5IjpbLTk5MDExMzE0MCw1NzA3NDEwNTAsMTQxMz
+Q1NDc2OSwtNDc5OTI3NTE3LDE0ODQyMDg1NjIsLTIwMTAxMTky
+MSwxNzEzNDE1NjM1LC02MzY5Mjc2MDgsLTk0MjY5NjQsODMwMD
+QzMDYyLC0xODg1OTM2NjQ3LDE3MzE0NzUwODksLTE2OTE1MzA1
+LC0xMzU5NjQ1NTIsMjA3MjU1MDM1MiwxNDk2NDc1NDFdfQ==
 -->
