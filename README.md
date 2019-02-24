@@ -231,10 +231,14 @@ class Singleton {
 将聚合对象的存储和访问分离，提供统一的聚合对象访问方式。JDK Collection iterator() 方法
 
 ### 中介者模式
+
+> 用一个中介对象（中介者）来封装一系列的对象交互，中 介者使各对象不需要显式地相互引用，从而使其耦合松散，而且可以独立地改变它们之间的交互。中介者模式又称为调停者模式，它是一种对象行为型模式。
+
+中介者模式用于很多对象间存在错综复杂的关系的情况，通过引入中介者与不同的对象交互，而不是对象直接交互，使不同的对象更加方便扩展。中介者模式使对象的网状关系，变成了以中介者为核心的星型放射状。
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk5MDExMzE0MCw1NzA3NDEwNTAsMTQxMz
-Q1NDc2OSwtNDc5OTI3NTE3LDE0ODQyMDg1NjIsLTIwMTAxMTky
-MSwxNzEzNDE1NjM1LC02MzY5Mjc2MDgsLTk0MjY5NjQsODMwMD
-QzMDYyLC0xODg1OTM2NjQ3LDE3MzE0NzUwODksLTE2OTE1MzA1
-LC0xMzU5NjQ1NTIsMjA3MjU1MDM1MiwxNDk2NDc1NDFdfQ==
+eyJoaXN0b3J5IjpbLTE5NzQ3Mzg5NDUsNTcwNzQxMDUwLDE0MT
+M0NTQ3NjksLTQ3OTkyNzUxNywxNDg0MjA4NTYyLC0yMDEwMTE5
+MjEsMTcxMzQxNTYzNSwtNjM2OTI3NjA4LC05NDI2OTY0LDgzMD
+A0MzA2MiwtMTg4NTkzNjY0NywxNzMxNDc1MDg5LC0xNjkxNTMw
+NSwtMTM1OTY0NTUyLDIwNzI1NTAzNTIsMTQ5NjQ3NTQxXX0=
 -->
