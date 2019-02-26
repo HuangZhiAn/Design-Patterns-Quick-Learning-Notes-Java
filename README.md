@@ -235,9 +235,15 @@ class Singleton {
 > 用一个中介对象（中介者）来封装一系列的对象交互，中 介者使各对象不需要显式地相互引用，从而使其耦合松散，而且可以独立地改变它们之间的交互。中介者模式又称为调停者模式，它是一种对象行为型模式。
 
 中介者模式用于很多对象间存在错综复杂的关系的情况，通过引入中介者与不同的对象交互，而不是对象直接交互，使不同的对象更加方便扩展。中介者模式使对象的网状关系，变成了以中介者为核心的星型放射状。  
-在每个对象中都需要关联一个中介者，在对象想要和其它对象交互时，调用中介者的方法即可，中介者中维护所有对象的引用，实现不同的对象间的交互逻辑（根据对象调用中介者时传进来的参数）
+在每个对象中都需要关联一个中介者，在对象想要和其它对象交互时，调用中介者的方法即可，中介者中维护所有对象的引用，实现不同的对象间的交互逻辑（根据对象调用中介者时传进来的参数）  
+
+### 备忘录模式
+
+> 在不破坏封装的前提下，捕获一个对象的内部状态，并在该对象之外保存这个状态，这样可以在以后将对象恢复到原先保存的状态。它是一种对象行为型模式，其别名为Token  
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNTg4MTE2MDMsLTUxOTU5NjI0NSwtMT
+eyJoaXN0b3J5IjpbLTE5ODIzNjgzNjMsLTUxOTU5NjI0NSwtMT
 k3NDczODk0NSw1NzA3NDEwNTAsMTQxMzQ1NDc2OSwtNDc5OTI3
 NTE3LDE0ODQyMDg1NjIsLTIwMTAxMTkyMSwxNzEzNDE1NjM1LC
 02MzY5Mjc2MDgsLTk0MjY5NjQsODMwMDQzMDYyLC0xODg1OTM2
