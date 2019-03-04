@@ -243,11 +243,17 @@ class Singleton {
 
 在操作过程中记录对象状态，提供 undo() 方法撤回到上一步的状态，提供 redo() 方法反撤回。
 
+### 观察者模式
+
+> 定义对象之间的一种一对多依赖关系，使得每当一个对象状态发生改变时，其相关依赖对象皆得到通知并被自动更新。观察者模式的别名包括发布-订阅（Publish/Subscribe）模式、模型-视图（Model/View）模式、源-监听器（Source/Listener）模式或从属者（Dependents）模式。观察者模式是一种对象行为型模式。
+
+一个对象通知一组对象，触发一组对象不同的动作。将观察者和被观察者都进行抽象，在抽象被观察者类中存观察者的 List，同时声明或实现通知方法（ notify() ），
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3OTY2ODkxMzYsMTM1MDIwMjcyMiwtNT
-E5NTk2MjQ1LC0xOTc0NzM4OTQ1LDU3MDc0MTA1MCwxNDEzNDU0
-NzY5LC00Nzk5Mjc1MTcsMTQ4NDIwODU2MiwtMjAxMDExOTIxLD
-E3MTM0MTU2MzUsLTYzNjkyNzYwOCwtOTQyNjk2NCw4MzAwNDMw
-NjIsLTE4ODU5MzY2NDcsMTczMTQ3NTA4OSwtMTY5MTUzMDUsLT
-EzNTk2NDU1MiwyMDcyNTUwMzUyLDE0OTY0NzU0MV19
+eyJoaXN0b3J5IjpbLTYwMDkzOTI5NywtMTc5NjY4OTEzNiwxMz
+UwMjAyNzIyLC01MTk1OTYyNDUsLTE5NzQ3Mzg5NDUsNTcwNzQx
+MDUwLDE0MTM0NTQ3NjksLTQ3OTkyNzUxNywxNDg0MjA4NTYyLC
+0yMDEwMTE5MjEsMTcxMzQxNTYzNSwtNjM2OTI3NjA4LC05NDI2
+OTY0LDgzMDA0MzA2MiwtMTg4NTkzNjY0NywxNzMxNDc1MDg5LC
+0xNjkxNTMwNSwtMTM1OTY0NTUyLDIwNzI1NTAzNTIsMTQ5NjQ3
+NTQxXX0=
 -->
