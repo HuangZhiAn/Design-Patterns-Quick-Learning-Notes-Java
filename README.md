@@ -1,11 +1,11 @@
 
-# Design-Patterns-Quick-Learning-Notes-Java
-设计模式快速学习笔记  
+<!--# Design-Patterns-Quick-Learning-Notes-Java-->
+# 设计模式快速学习笔记  
 之前看《Java设计模式》这本书，写了一些设计模式学习笔记，现在重新排版整理，增加书中的练习题代码，作为设计模式的**快速学习**或**快速复习**资料  
 
 [设计原则学习复习笔记](https://github.com/HuangZhiAn/Design-Patterns-Quick-Learning-Notes-Java/blob/master/Object-Oriented-Design-Principles.md)  
 
-特别感谢书本作者[刘伟](http://blog.csdn.net/lovelion),编辑 [quanke](http://quanke.name)
+<!--特别感谢书本作者[刘伟](http://blog.csdn.net/lovelion),编辑 [quanke](http://quanke.name)-->
 
 ## 创建型模式
 ### 简单工厂模式
@@ -249,11 +249,11 @@ class Singleton {
 
 一个对象通知一组对象，触发一组对象不同的动作。将观察者和被观察者都进行抽象，在抽象被观察者类中存观察者的 List，同时声明或实现通知方法（ notify() ），在通知方法中循环观察者 List ，调用观察者的动作方法（ update() ）
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDYzMTAwODMwLC0xNzk2Njg5MTM2LDEzNT
-AyMDI3MjIsLTUxOTU5NjI0NSwtMTk3NDczODk0NSw1NzA3NDEw
-NTAsMTQxMzQ1NDc2OSwtNDc5OTI3NTE3LDE0ODQyMDg1NjIsLT
-IwMTAxMTkyMSwxNzEzNDE1NjM1LC02MzY5Mjc2MDgsLTk0MjY5
-NjQsODMwMDQzMDYyLC0xODg1OTM2NjQ3LDE3MzE0NzUwODksLT
-E2OTE1MzA1LC0xMzU5NjQ1NTIsMjA3MjU1MDM1MiwxNDk2NDc1
-NDFdfQ==
+eyJoaXN0b3J5IjpbLTMwNDI0Mjg1NSw0NjMxMDA4MzAsLTE3OT
+Y2ODkxMzYsMTM1MDIwMjcyMiwtNTE5NTk2MjQ1LC0xOTc0NzM4
+OTQ1LDU3MDc0MTA1MCwxNDEzNDU0NzY5LC00Nzk5Mjc1MTcsMT
+Q4NDIwODU2MiwtMjAxMDExOTIxLDE3MTM0MTU2MzUsLTYzNjky
+NzYwOCwtOTQyNjk2NCw4MzAwNDMwNjIsLTE4ODU5MzY2NDcsMT
+czMTQ3NTA4OSwtMTY5MTUzMDUsLTEzNTk2NDU1MiwyMDcyNTUw
+MzUyXX0=
 -->
